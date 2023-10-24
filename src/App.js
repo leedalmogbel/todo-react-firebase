@@ -26,6 +26,8 @@ function App() {
     const q = query(collection(db, 'todos'));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       let todosArr = [];
+
+      // add here
       querySnapshot.forEach((doc) => {
         todosArr.push({...doc.data(), id: doc.id});
       });
