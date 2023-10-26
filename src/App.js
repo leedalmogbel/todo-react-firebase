@@ -34,12 +34,11 @@ function App() {
       setTodos(todosArr);
     })
     return () => unsubscribe;
-  }, [])
-
+  }, []);
   // update todo
 
   // delete todo
-
+// continue...
   return (
     <div className={style.bg}>
       <div className={style.container}>
